@@ -1,0 +1,133 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.SimpleCart -S 1 -M 2.0 -N 5 -C 1.0
+Relation:     BOW
+Instances:    8160
+Attributes:   414
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CART Decision Tree
+
+ratio-emoticon < 0.0026281254316894596
+|  term-q < 0.5
+|  |  term-ke < 0.5
+|  |  |  ratio-laugh < 9.629328793593923E-4
+|  |  |  |  term-quiero < 0.5
+|  |  |  |  |  ratio-commas < 0.016372821940406228
+|  |  |  |  |  |  ratio-character-flooding < 0.0026639056577284852
+|  |  |  |  |  |  |  term-volver < 0.5
+|  |  |  |  |  |  |  |  ratio-accents < 0.06821705426356589
+|  |  |  |  |  |  |  |  |  term-hermoso < 0.5
+|  |  |  |  |  |  |  |  |  |  ratio-diff-word < 0.9402852049910874
+|  |  |  |  |  |  |  |  |  |  |  term-puedes < 0.5: 20S(345.0/293.0)
+|  |  |  |  |  |  |  |  |  |  |  term-puedes >= 0.5: 30S(9.0/2.0)
+|  |  |  |  |  |  |  |  |  |  ratio-diff-word >= 0.9402852049910874
+|  |  |  |  |  |  |  |  |  |  |  email < 0.5: 30S(353.0/325.0)
+|  |  |  |  |  |  |  |  |  |  |  email >= 0.5: 20S(18.0/8.0)
+|  |  |  |  |  |  |  |  |  term-hermoso >= 0.5: 30S(11.0/1.0)
+|  |  |  |  |  |  |  |  ratio-accents >= 0.06821705426356589: 30S(74.0/43.0)
+|  |  |  |  |  |  |  term-volver >= 0.5: 20S(9.0/0.0)
+|  |  |  |  |  |  ratio-character-flooding >= 0.0026639056577284852: 20S(108.0/68.0)
+|  |  |  |  |  ratio-commas >= 0.016372821940406228
+|  |  |  |  |  |  ratio-diff-word < 0.3412195727769498: 20S(29.0/8.0)
+|  |  |  |  |  |  ratio-diff-word >= 0.3412195727769498
+|  |  |  |  |  |  |  term-k < 0.5
+|  |  |  |  |  |  |  |  term-ojos < 0.5
+|  |  |  |  |  |  |  |  |  term-trabajo < 0.5
+|  |  |  |  |  |  |  |  |  |  term-mayor < 0.5
+|  |  |  |  |  |  |  |  |  |  |  ratio-diff-word < 0.6382566585956416
+|  |  |  |  |  |  |  |  |  |  |  |  term-anos < 0.5
+|  |  |  |  |  |  |  |  |  |  |  |  |  url < 0.5
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  term-acerca < 0.5
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ratio-points < 0.060290860530258616
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  term-estar < 0.5
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  exclamation-flooding < 0.5: 20S(62.0/48.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  exclamation-flooding >= 0.5: 30S(11.0/2.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  term-estar >= 0.5: 30S(21.0/4.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ratio-points >= 0.060290860530258616: 20S(91.0/57.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  term-acerca >= 0.5: 20S(9.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  url >= 0.5: 30S(30.0/13.0)
+|  |  |  |  |  |  |  |  |  |  |  |  term-anos >= 0.5: 30S(59.0/27.0)
+|  |  |  |  |  |  |  |  |  |  |  ratio-diff-word >= 0.6382566585956416
+|  |  |  |  |  |  |  |  |  |  |  |  term-muerte < 0.5: 30S(679.0/421.0)
+|  |  |  |  |  |  |  |  |  |  |  |  term-muerte >= 0.5: 20S(14.0/4.0)
+|  |  |  |  |  |  |  |  |  |  term-mayor >= 0.5: 30S(58.0/18.0)
+|  |  |  |  |  |  |  |  |  term-trabajo >= 0.5: 30S(110.0/35.0)
+|  |  |  |  |  |  |  |  term-ojos >= 0.5
+|  |  |  |  |  |  |  |  |  term-del < 0.5: 20S(45.0/24.0)
+|  |  |  |  |  |  |  |  |  term-del >= 0.5
+|  |  |  |  |  |  |  |  |  |  ratio-numbers < 0.012000304628975755: 30S(101.0/72.0)
+|  |  |  |  |  |  |  |  |  |  ratio-numbers >= 0.012000304628975755: 20S(16.0/5.0)
+|  |  |  |  |  |  |  term-k >= 0.5: 20S(37.0/21.0)
+|  |  |  |  term-quiero >= 0.5
+|  |  |  |  |  term-ti < 0.5
+|  |  |  |  |  |  ratio-points < 0.34408602150537637
+|  |  |  |  |  |  |  term-eterno < 0.5
+|  |  |  |  |  |  |  |  term-primero < 0.5
+|  |  |  |  |  |  |  |  |  ratio-diff-word < 0.4926113155973847: 20S(61.0/40.0)
+|  |  |  |  |  |  |  |  |  ratio-diff-word >= 0.4926113155973847
+|  |  |  |  |  |  |  |  |  |  term-su < 0.5
+|  |  |  |  |  |  |  |  |  |  |  ratio-points < 0.028261736933102806: 20S(52.0/38.0)
+|  |  |  |  |  |  |  |  |  |  |  ratio-points >= 0.028261736933102806: 30S(53.0/34.0)
+|  |  |  |  |  |  |  |  |  |  term-su >= 0.5: 30S(35.0/9.0)
+|  |  |  |  |  |  |  |  term-primero >= 0.5: 30S(25.0/7.0)
+|  |  |  |  |  |  |  term-eterno >= 0.5: 20S(10.0/1.0)
+|  |  |  |  |  |  ratio-points >= 0.34408602150537637: 20S(22.0/6.0)
+|  |  |  |  |  term-ti >= 0.5
+|  |  |  |  |  |  term-regalo < 0.5: 20S(200.0/92.0)
+|  |  |  |  |  |  term-regalo >= 0.5: 30S(18.0/13.0)
+|  |  |  ratio-laugh >= 9.629328793593923E-4: 20S(159.0/74.0)
+|  |  term-ke >= 0.5: 20S(128.0/37.0)
+|  term-q >= 0.5: 20S(437.0/186.0)
+ratio-emoticon >= 0.0026281254316894596
+|  ratio-laugh < 0.001001763986609738
+|  |  term-q < 0.5
+|  |  |  ratio-emphasis < 8.609594816491368E-4
+|  |  |  |  ratio-diff-word < 0.9857142857142858: 20S(974.0/477.0)
+|  |  |  |  ratio-diff-word >= 0.9857142857142858
+|  |  |  |  |  ratio-commas < 0.10555555555555556
+|  |  |  |  |  |  ratio-accents < 0.11805555555555555: 20S(148.0/122.0)
+|  |  |  |  |  |  ratio-accents >= 0.11805555555555555: 30S(7.0/0.0)
+|  |  |  |  |  ratio-commas >= 0.10555555555555556: 30S(18.0/8.0)
+|  |  |  ratio-emphasis >= 8.609594816491368E-4
+|  |  |  |  term-su < 0.5: 20S(44.0/44.0)
+|  |  |  |  term-su >= 0.5: 30S(32.0/13.0)
+|  |  term-q >= 0.5: 20S(284.0/80.0)
+|  ratio-laugh >= 0.001001763986609738: 20S(310.0/64.0)
+
+Number of Leaf Nodes: 44
+
+Size of the Tree: 87
+
+Time taken to build model: 56.37 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4896               60      %
+Incorrectly Classified Instances      3264               40      %
+Kappa statistic                          0.1895
+Mean absolute error                      0.3239
+Root mean squared error                  0.4082
+Relative absolute error                 93.4574 %
+Root relative squared error             98.0583 %
+Total Number of Instances             8160     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.575    10S
+                 0.724     0.546      0.633     0.724     0.675      0.617    20S
+                 0.478     0.271      0.541     0.478     0.507      0.636    30S
+Weighted Avg.    0.6       0.416      0.573     0.6       0.584      0.623
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+    0  234   54 |    a = 10S
+    0 3336 1272 |    b = 20S
+    0 1704 1560 |    c = 30S
+

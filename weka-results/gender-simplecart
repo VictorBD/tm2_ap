@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.SimpleCart -S 1 -M 2.0 -N 5 -C 1.0
+Relation:     BOW
+Instances:    8160
+Attributes:   414
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CART Decision Tree
+
+ratio-emoticon < 0.005108565165196513
+|  term-amor < 0.5
+|  |  email < 0.5
+|  |  |  ratio-points < 0.06926884996191927: MALE(1589.0/1097.0)
+|  |  |  ratio-points >= 0.06926884996191927
+|  |  |  |  term-sola < 0.5
+|  |  |  |  |  term-hombre < 0.5
+|  |  |  |  |  |  term-corazon < 0.5
+|  |  |  |  |  |  |  term-tema < 0.5
+|  |  |  |  |  |  |  |  exclamation-flooding < 0.5
+|  |  |  |  |  |  |  |  |  term-mis < 0.5: MALE(512.0/411.0)
+|  |  |  |  |  |  |  |  |  term-mis >= 0.5: FEMALE(59.0/38.0)
+|  |  |  |  |  |  |  |  exclamation-flooding >= 0.5: FEMALE(126.0/87.0)
+|  |  |  |  |  |  |  term-tema >= 0.5: MALE(21.0/4.0)
+|  |  |  |  |  |  term-corazon >= 0.5: FEMALE(66.0/33.0)
+|  |  |  |  |  term-hombre >= 0.5: MALE(54.0/20.0)
+|  |  |  |  term-sola >= 0.5: FEMALE(41.0/12.0)
+|  |  email >= 0.5: MALE(143.0/43.0)
+|  term-amor >= 0.5
+|  |  ratio-points < 0.09455867249330407
+|  |  |  ratio-numbers < 0.0032558386036815887: FEMALE(459.0/386.0)
+|  |  |  ratio-numbers >= 0.0032558386036815887: MALE(113.0/60.0)
+|  |  ratio-points >= 0.09455867249330407: FEMALE(229.0/110.0)
+ratio-emoticon >= 0.005108565165196513: FEMALE(1465.0/982.0)
+
+Number of Leaf Nodes: 13
+
+Size of the Tree: 25
+
+Time taken to build model: 60.34 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4747               58.174  %
+Incorrectly Classified Instances      3413               41.826  %
+Kappa statistic                          0.1635
+Mean absolute error                      0.4783
+Root mean squared error                  0.4935
+Relative absolute error                 95.6565 %
+Root relative squared error             98.6997 %
+Total Number of Instances             8160     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.595     0.431      0.58      0.595     0.587      0.6      MALE
+                 0.569     0.405      0.584     0.569     0.576      0.6      FEMALE
+Weighted Avg.    0.582     0.418      0.582     0.582     0.582      0.6  
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2426 1654 |    a = MALE
+ 1759 2321 |    b = FEMALE
+
