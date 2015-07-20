@@ -30,21 +30,13 @@ public class GenerateBOWBaseline {
     private static String PATH = "/home/victor/tm2_ap/pan13-author-profiling-test-corpus2-2013-04-29/es-prueba";
     // /home/victor/text_mining/pan13-author-profiling-test-corpus2-2013-04-29
     // Fichero que para cada autor indica el genero y rango de edad
-<<<<<<< HEAD
     private static String TRUTH = "/home/victor/tm2_ap/pan13-author-profiling-test-corpus2-2013-04-29/truth-es.txt";
     
     // Ficheros quegeneramos nosotros, Bag of words y datos para weka
     private static String BOW = "/home/victor/tm2_ap/bow-es.txt";
     private static String OUTPUT = "/home/victor/tm2_ap/pan-ap-13-training-es-{task}.arff";
     
-=======
-    private static String TRUTH = "/home/luis/Text_mining/pan13-author-profiling-test-corpus2-2013-04-29/truth-es.txt";
 
-    // Ficheros que generamos nosotros, Bag of words y datos para weka
-    private static String BOW = "/home/luis/Text_mining/bow-es.txt";
-    private static String OUTPUT = "/home/luis/Text_mining/es-{task}.arff";
-
->>>>>>> 3be82f9b97e5d19538ea552cde24de17e10bba32
     private static int NTERMS = 1000;
 
     public static void main(String[] args) {
